@@ -135,6 +135,36 @@ details code{background:var(--warm);padding:1px 6px;border-radius:4px;font-size:
 /* "store opening soon" toast */
 .soon{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:14px 22px;border-radius:999px;box-shadow:0 14px 30px rgba(0,0,0,.3);font-size:.95rem;z-index:100}
 
+/* Blog */
+.crumb{display:inline-block;color:var(--teal-d);font-weight:600;margin:26px 0 18px}
+.post{padding-bottom:40px}
+.article{font-size:1.07rem;color:#33312e}
+.article h1{font-size:clamp(2rem,4vw,2.7rem);font-weight:800;margin:8px 0 18px;line-height:1.12}
+.article h2{font-size:1.5rem;font-weight:700;margin:34px 0 12px}
+.article h3{font-size:1.2rem;font-weight:700;margin:26px 0 10px}
+.article p{margin:0 0 16px}
+.article ul,.article ol{margin:0 0 18px 1.2em}
+.article li{margin:6px 0}
+.article a{color:var(--teal-d);font-weight:600;text-decoration:underline}
+.article strong{color:var(--navy)}
+.article blockquote{border-left:4px solid var(--teal);background:var(--warm);margin:0 0 18px;padding:14px 20px;border-radius:0 8px 8px 0;font-size:1.05rem}
+.article blockquote p{margin:0}
+.article table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:.98rem}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-weight:600}
+.article td{padding:9px 12px;border-bottom:1px solid var(--line)}
+.article tr:nth-child(even) td{background:var(--warm)}
+.article code{background:var(--warm);padding:1px 6px;border-radius:4px;font-size:.9em}
+.article em{color:var(--muted)}
+.post-cta{margin-top:40px;background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;border-radius:16px;padding:34px 30px;text-align:center}
+.post-cta h3{color:#fff;font-size:1.4rem}
+.post-cta p{opacity:.85;margin:10px 0 20px}
+.post-list{display:flex;flex-direction:column;gap:18px}
+.post-card{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 28px;transition:transform .15s ease,box-shadow .15s ease}
+.post-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.post-card h2{font-size:1.3rem;font-weight:700}
+.post-card p{color:#55534f;margin:8px 0 12px}
+.readmore{color:var(--teal-d);font-weight:600}
+
 /* Responsive */
 @media(max-width:880px){
   .hero-grid{grid-template-columns:1fr;gap:30px}
