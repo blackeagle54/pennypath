@@ -190,6 +190,9 @@
           <li>✓ US Letter &amp; A4 · print or tablet</li>
           <li>✓ Free future updates</li>
         </ul>
+        <div class="guarantee">
+          <span>🔒 Secure checkout</span><span>⚡ Instant download</span><span>♾️ Free updates</span><span>💚 Friendly support</span>
+        </div>
         <a class="btn btn-lg btn-block" data-buy href="#">Get the Bundle Now</a>
         <p class="price-fine">Secure checkout via Gumroad. Because these are instant digital downloads, all sales are final — but if anything's wrong, just reach out.</p>
       </div>
@@ -246,6 +249,17 @@
   </div>
 </footer>
 
+<!-- Sticky buy bar (appears after the hero) -->
+<div id="buybar" class="buybar">
+  <div class="wrap buybar-inner">
+    <div class="buybar-text"><b>The Complete Money Bundle</b><span>10 printables + spreadsheet · <span data-price>$14</span> <s data-compare>$45</s></span></div>
+    <a class="btn" data-buy href="#pricing">Get the Bundle</a>
+  </div>
+</div>
+
+<!-- shown only if the store link isn't configured yet -->
+<div id="soon" hidden class="soon">The store opens any moment — the bundle link isn't live yet. Check back shortly! 💚</div>
+
 <script>
   // Wire every [data-buy] button to the configured Gumroad URL; fill price text.
   (function () {
@@ -272,11 +286,24 @@
     });
     var y = document.getElementById('year');
     if (y) y.textContent = new Date().getFullYear();
+
+    // Sticky buy bar: show after the hero scrolls out, hide when the pricing section is in view.
+    var bar = document.getElementById('buybar');
+    var pricing = document.getElementById('pricing');
+    function onScroll() {
+      if (!bar) return;
+      var past = window.scrollY > 620;
+      var atPricing = false;
+      if (pricing) {
+        var r = pricing.getBoundingClientRect();
+        atPricing = r.top < window.innerHeight && r.bottom > 0;
+      }
+      bar.classList.toggle('show', past && !atPricing);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   })();
 </script>
-
-<!-- shown only if the store link isn't configured yet -->
-<div id="soon" hidden class="soon">The store opens any moment — the bundle link isn't live yet. Check back shortly! 💚</div>
 
 </body>
 </html>
