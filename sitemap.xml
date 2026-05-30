@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://blackeagle54.github.io/pennypath/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://blackeagle54.github.io/pennypath/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://blackeagle54.github.io/pennypath/blog/50-30-20-budget-rule/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://blackeagle54.github.io/pennypath/blog/what-is-a-sinking-fund/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://blackeagle54.github.io/pennypath/blog/zero-based-budgeting-beginners/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/50-30-20-budget-rule/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/zero-based-budgeting-beginners/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/what-is-a-sinking-fund/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/debt-snowball-vs-avalanche/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/budgeting-for-beginners/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/no-spend-challenge/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blackeagle54.github.io/pennypath/blog/52-week-savings-challenge/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
